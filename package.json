@@ -4,6 +4,7 @@
   "description": "A react project skeleton",
   "main": "index.js",
   "scripts": {
+    "start": "watchify src/main.jsx -v -t [ babelify --presets [ react] ] -o public/js/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,6 @@
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "watchify": "^3.6.1"
-  }
+  },
+  "devDependencies": {}
 }
